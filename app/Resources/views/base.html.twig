@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Head -->
+        {{ include('includes/head.html.twig') }}  
+    </head>
+    <body>
+        <!-- {% block body %}{% endblock %} -->
+        
+        {% block javascripts %}{% endblock %}
+
+        <!-- Navigation -->
+        {{ include('includes/navigation.html.twig') }}  
+   
+        <!-- Page Content -->
+        <div class="container">
+
+            <!-- Page Header -->
+            {{ include('includes/header.html.twig') }}
+
+
+            <!-- Projects Row -->
+            {{ include('includes/topNews.html.twig') }}
+            
+            <hr>
+
+            <!-- Pagination -->
+            {{ include('includes/pagination.html.twig') }} 
+
+            <hr>
+
+            <!-- Footer -->
+            {{ include('includes/footer.html.twig') }} 
+            
+        </div>
+        <!-- /.container -->
+
+        <!-- Footer script -->
+        {{ include('includes/footerScript.html.twig') }} 
+
+       
+    </body>
+</html>

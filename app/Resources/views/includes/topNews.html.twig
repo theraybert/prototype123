@@ -1,0 +1,23 @@
+            {% for news in topNews %}
+
+                {#{ include('article/article_details.html.twig', { 'article': article }) }#}
+
+                    {% if loop.index is divisibleby(2) %}
+                        <div class="row">
+                    {% endif %}
+
+                    <div class="col-md-6 portfolio-item">
+                        <a href="#">
+                            <img class="img-responsive" src="{{ news.photo }}" alt="">
+                        </a>
+                        <h3>
+                            <a href="#">{{ news.title }}</a>
+                        </h3>
+                        <p>{{ news.slug }}</p>
+                    </div>                
+
+                    {% if loop.index is not divisibleby(2) %}
+                        <div class="</div>">
+                    {% endif %}
+
+            {% endfor %}
