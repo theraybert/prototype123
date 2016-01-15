@@ -6,6 +6,6 @@ class Meteo
 {
     public function getWeather($city)
     {
-        return '-12 C for '.$city;
+        return '-133 C for '.$city;
     }
 }
