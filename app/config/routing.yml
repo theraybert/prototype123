@@ -1,3 +1,6 @@
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+taskingn_show:
+    path:      /tasking
+    defaults:  { _controller: AppBundle:Tasking:show }
