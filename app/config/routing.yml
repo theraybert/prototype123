@@ -4,3 +4,27 @@ app:
 taskingn_show:
     path:      /tasking
     defaults:  { _controller: AppBundle:Tasking:show }
+task_success:
+    path:      /success
+    defaults:  { _controller: AppBundle:Tasking:success }
+task_new:
+    path:      /tasking
+    defaults:  { _controller: AppBundle:Tasking:show }
+product_add:
+    path:      /product/create
+    defaults:  { _controller: AppBundle:Product:create }
+product_show:
+    path:      /product/show/{id}
+    defaults:  { _controller: AppBundle:Product:show ,id: 1 }
+product_update:
+    path:      /product/update/{id}
+    defaults:  { _controller: AppBundle:Product:update ,id: 1 }
+product_delete:
+    path:      /product/delete/{id}
+    defaults:  { _controller: AppBundle:Product:delete ,id: 1 }
+test_index:
+    path:      /test
+    defaults:  { _controller: AppBundle:Test:index }    
+test_boostrap:
+    path:      /test/bootstrap
+    defaults:  { _controller: AppBundle:Test:bootstrap }
